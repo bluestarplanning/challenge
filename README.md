@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Blue Star Planning Coding Challenge | React Typescript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Difficulty: medium/hard
 
-## Available Scripts
+## Pre-requisites ✅
+- Run `npm install`. we already pre-installed some potentially useful packages
+    - All React related packages
+    - Axios (you can use a different library if you want)
+    - React-JSS and styled-components
 
-In the project directory, you can run:
+## Goals/Outcomes ✨
+- To test knowledge of consuming APIs and handling responses
+- Loading state and knowing where and how to make API calls efficiently
+- Testing knowledge of React built in hooks and how to potentially create your own hook
+- Prevent unneccessary rerenders
 
-### `yarn start`
+## Requirements 📖
+- Fetch and display _Active Jobs_ 
+    - Use the API url `https://5f96dad811ab98001603b3f0.mockapi.io/active-jobs`
+- Fetch and display _Completed Jobs_ 
+    - Use the API url `https://5f96dad811ab98001603b3f0.mockapi.io/completed-jobs`
+- You have complete freedom in the UI/UX of the job information
+- Refresh one of the lists by the button click
+- **Extra:** make your own custom hook for the above functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What's Already Been Done 🏁
+- Skeleton UI/UX (`Views/Jobs`).
+    - List container for _Active Jobs_
+    - List container for _Completed Jobs_
+    - Two refresh buttons
+- Typescript type for the API response data (`types.ts`)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Non-requirements
+- You can choose your own way of styling (styled-components, JSS, css, sass, other)
+- You can choose your own way of fetching data (Axios, XHR, Fetch, other)
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Data 
+- API Response is an array of Jobs: 
+<pre>
+<code>
+interface JobInterface {
+    id: string,
+    createdAt: string,
+    person: string,
+    description: string,
+    title: string
+}
+</code>
+</pre>

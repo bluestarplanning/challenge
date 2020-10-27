@@ -1,0 +1,37 @@
+.root {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+
+}
+
+.container{
+    width: 50%;
+    min-height: 100%;
+    padding: 16px;
+}
+
+.container.active{
+    background-color: #2ECC71;
+}
+
+.container.completed {
+    background-color: #3498DB;
+}
+
+.header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}

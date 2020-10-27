@@ -1,0 +1,27 @@
+.refresh {
+    position: absolute;
+    background-color: #e67e22;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 2px 0px 0px #8b6341;
+}
+
+.refresh:hover{
+    box-shadow: none;
+    top: 2px;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+}
+
+.refresh svg {
+    font-size: 20px;
+    margin-right: 8px;
+}

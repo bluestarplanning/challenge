@@ -1,4 +1,4 @@
-# Blue Star Planning Coding Challenge | React Typescript
+# Blue Star Planning Coding Challenge | React Javascript
 
 ### Difficulty: medium/hard
 
@@ -28,7 +28,6 @@
     - List container for _Active Jobs_
     - List container for _Completed Jobs_
     - Two refresh buttons
-- Typescript type for the API response data (`types.ts`)
 
 ## Non-requirements
 - You can choose your own way of styling (styled-components, JSS, css, sass, other)

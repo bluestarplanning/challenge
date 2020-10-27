@@ -3,9 +3,9 @@ import {HiRefresh} from 'react-icons/hi'
 import './styles.css';
 
 
-const RefreshButton = (props: React.HTMLAttributes<HTMLDivElement>) =>  {
+const RefreshButton = ({onClick = undefined, ...other}) =>  {
     return (
-        <div className="refresh" {...props}>
+        <div className="refresh" onClick={onClick} {...other}>
             <div className="button-content">
                 <HiRefresh />
                 <span>Refresh</span>
